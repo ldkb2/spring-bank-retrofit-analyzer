@@ -11,6 +11,7 @@ import ResultsStep from './components/ResultsStep';
 import type { WizardState, BuildingInfo, EnergyUsage } from './types';
 import { runFullAnalysis } from './utils/calculations';
 import { generatePDFReport } from './utils/pdfGenerator';
+import logoImage from '/spring-bank-logo.png';
 
 const steps = [
   { number: 1, title: 'Building Info', description: 'Basic details' },
@@ -155,7 +156,7 @@ function App() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center">
               <img
-                src="/spring-bank-logo.png"
+                src={logoImage}
                 alt="Spring Bank"
                 className="h-6 w-auto"
               />

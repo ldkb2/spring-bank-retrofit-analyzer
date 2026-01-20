@@ -1,4 +1,5 @@
 import React from 'react';
+import logoImage from '/spring-bank-logo.png';
 
 const Header: React.FC = () => {
   return (
@@ -6,7 +7,7 @@ const Header: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <img
-            src="/spring-bank-logo.png"
+            src={logoImage}
             alt="Spring Bank"
             className="h-10 w-auto"
           />
